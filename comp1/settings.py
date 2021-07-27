@@ -25,7 +25,7 @@ SECRET_KEY = '3^rv(&)@_f95fxq-+=p5s$=hyo$%x$x-485do50)qku#1kiqsf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['warm-hamlet-11774.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*','127.0.0.1','localhost']
 
 
 
