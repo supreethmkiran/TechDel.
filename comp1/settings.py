@@ -25,7 +25,7 @@ SECRET_KEY = '3^rv(&)@_f95fxq-+=p5s$=hyo$%x$x-485do50)qku#1kiqsf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['warm-hamlet-11774.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*','127.0.0.1','localhost']
 
 
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'allauth.socialaccount.providers.google',
 
-    'whitenoise.runserver_nostatic',
+    #'whitenoise.runserver_nostatic',
 
     'allauth',
     'allauth.account',
@@ -164,7 +164,7 @@ STATIC_URL = '/static/'
 LOGIN_REDIRECT_URL = "/homepage1/"
 
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
